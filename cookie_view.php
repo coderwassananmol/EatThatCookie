@@ -9,7 +9,7 @@ else
 {
     echo 'Sorry, it got all eaten up. Better luck next time!';
 }
-setcookie('cookie','Thanks for eating the cookies.',time()-$_SESSION['random']);
+setcookie('cookie','Thanks for eating the cookies.',time()-$_SESSION['random']); //Deleting the cookie which was set up earlier.
 session_destroy();
 
 ?>
